@@ -1,4 +1,5 @@
 :root {
+  
     --colorblue: rgb(70, 113, 229);
     
     --black-color: #000;
@@ -324,8 +325,8 @@
     max-width: 200px;
   }
   .marco {
-    width: 100%;
-    height: var(--video-heigth-mv);
+    width: auto;
+    height: var(--video-heigth-tb);
     background-color: var(--black-color);
   }
   .marco {
@@ -361,7 +362,7 @@
     margin-right: 0;
   }
   .marco {
-    height: var(--video-heigth);
+    height: auto;
   }
   .marco .container {
   }
@@ -488,4 +489,42 @@
     width: auto;
   }
   
+}
+
+.oval-half1 {
+  width: 0vw;
+  height: 0vh;
+  clip-path: ellipse(80% 90% at 10% 20%);
+}
+.oval-half1 video {
+  height: 100%;
+  transform: translateX(-30%);
+}
+.oval-half1 {
+  width: 25vw;
+  height: 50vh;
+}
+.rombo {
+  border: 3px solid;
+  transform: rotate(25deg);
+}
+.third-content {
+  height: 25vh;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  justify-content: center;
+  margin-left: 1rem;
+}
+.third-content {
+  height: 40vh;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  justify-content: center;
+  margin-left: 1rem;
+}
+.index-content-aside {
+  margin-right: 1rem;
+}
+.index-content-aside {
+  margin-right: 0;
 }
