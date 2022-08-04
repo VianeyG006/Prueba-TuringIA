@@ -328,6 +328,9 @@
     height: var(--video-heigth-mv);
     background-color: var(--black-color);
   }
+  .marco {
+    height: var(--video-heigth-tb);
+  }
   .marco-title {
     font-size: 4.5vw;
     color: white;
@@ -357,7 +360,13 @@
     align-items: center;
     margin-right: 0;
   }
-  
+  .marco {
+    height: var(--video-heigth);
+  }
+  .marco .container {
+  }
+  .marco-title {
+  }
   /**************************VideoLoop**********************/
 .videom {
     position: relative;
@@ -381,9 +390,56 @@
       height: var(--video-heigth);
     }
   }
+  @media screen and (min-width: 1024px) {
+    .padding-laterales-0 {
+      padding-left: 5vw !important;
+      padding-right: 5vw !important;
+    }
+    .full-lg-screen {
+      width: 100%;
+      min-height: 100vh;
+    }
+    .section-title-3 {
+      padding-top: 5rem;
+    }
 
   .section {
     padding: 4vh var(--inicial-margin) 4vh var(--inicial-margin);
+  }
+  .section-title {
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    color: var(--first-color);
+    font-size: 1.2rem;
+  }
+  .section-text {
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    color: var(--black-color);
+    font-size: 1.5vmax;
+    width: auto;
+  }
+  .section-subtitle {
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    color: var(--black-color);
+    font-size: 2vw;
+    width: auto;
+  }
+  .section-big-subtitle {
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    color: var(--black-color);
+    font-size: 4vw;
+    width: auto;
   }
   .header .container {
     margin-left: 0;
@@ -432,4 +488,4 @@
     width: auto;
   }
   
-  
+}
